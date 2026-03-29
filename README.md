@@ -38,7 +38,7 @@ java FileName
 - Practice OOP concepts  
 - Prepare for exams and interviews  
 - Learn concepts in **bilingual format (English + Marathi)**  
-
+- 60 Days Challenge  for my self
 ---
 
 ## 👨‍💻 Author
