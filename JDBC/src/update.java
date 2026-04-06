@@ -1,6 +1,6 @@
 import java.sql.*;
 
-public class insert {
+public class update {
 
     private static final String url = "jdbc:mysql://localhost:3306/mydb";
     private static final String username = "root";
@@ -17,13 +17,13 @@ public class insert {
         try{
             Connection connection = DriverManager.getConnection(url,username,password);
             Statement statement = connection.createStatement();
-            String query = String.format("INSERT INTO student(name,age,marks) VALUES ('%s',%o,%f)","rahul",23,34.4);
+            String query = String.format("UPDATE student set marks = %f where id = %d",99.9,3);
             int rowAffected = statement.executeUpdate(query);
             if(rowAffected>0) {
-                System.out.println("data was insert");
+                System.out.println("data was update");
             }
             else {
-                System.out.println("data not insert");
+                System.out.println("data not update");
             }
 
         }catch(SQLException e){
